@@ -1,0 +1,22 @@
+<div class="table-container">
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th class="th">Id</th>
+                <th class="th">Nombre</th>
+                <th class="th">Kg</th>
+                <th class="th">Tipo</th>
+                <th class="th"></th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr *ngFor="let pet of pets">
+                <td class="td">{{pet.id}}</td>
+                <td class="td">{{pet.name}}</td>
+                <td class="td">{{pet.weight}}</td>
+                <td class="td">{{pet.type}}</td>
+                <td class="td"><button [attr.key]="pet.id">Ver más</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
